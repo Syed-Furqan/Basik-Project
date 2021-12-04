@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@200&display=swap');
+
+.main {
+    margin-left: 300px;
+}
+
+@media (max-width: 1150px) {
+    .main {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .main {
+        margin-top: 70px;
+        margin-left: 0;
+    }
+}
+
+.fa-users:before {
+    color: wheat;
+}
+
+.main__header {
+    margin: 10px;
+    padding: 15px;
+    background: #2e4e50;
+    color: white;
+    border-radius: 4px;
+}
+
+.main__header > h1 {
+    font-family: 'Pacifico', cursive;
+}
+
+.main__header > p {
+    margin-top: 15px;
+    color: #b7b7b7;
+}
+
+.main__body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user i {
+    margin-right: 10px;
+}
+
+.user {
+    flex-basis: 250px;
+    flex-grow: 1;
+    margin: 10px;
+    background: white;
+    border-radius: 6px;
+    transition: all 500ms;
+    box-shadow: 0 15px 6px -6px #256066;
+}
+
+.user:hover {
+    transform: scale(1.05);
+}
+
+.user__header > img {
+    border-radius: 50%;
+}
+
+.user__header {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.user__header > p {
+    font-weight: bold;
+    color: #820e97;
+    margin-bottom: 0;
+}
+
+.user__header > small {
+    font-weight: 600;
+    color: #979797;
+}
+
+.user__middle {
+    margin: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    height: 100px;
+    border-radius: 4px;
+    color: white;  
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 12px 6px -6px #985fe38c;
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.user__footer {
+    margin: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    height: 125px;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 12px 6px -6px #1d39358c;
+    background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+.user i {
+    color: #6127bd;
+}

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@200&display=swap');
+
+.sidebar {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(142, 190, 188);
+    overflow-x: hidden;
+    background: #283e40;
+}
+
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: none;
+}
+
+@media (max-width: 1150px){
+    .sidebar {
+        width: 200px;
+    }
+}
+
+@media (max-width: 1000px){
+    .sidebar__top, .sidebar__bottom{
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+    }
+
+    .navbar-light .navbar-brand {
+        font-family: 'Pacifico', cursive;
+        color: wheat;
+    }
+
+    .navbar p {
+        padding: 10px;
+        margin: 0;
+        height: 40px;
+        color: white;
+        font-weight: 600;
+        background: #354c4d;
+    }
+
+    .navbar p a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .sidebar {
+        height: auto;
+        width: 100%;
+    }
+
+    .navbar-light .navbar-toggler {
+        border-color: wheat;
+    }
+}
+
+.sidebar h4 {
+    font-family: 'Pacifico', cursive;
+    color: wheat;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.sidebar h4 > a {
+    text-decoration: none;
+    color: wheat;
+}
+
+.sidebar__top > p > a {
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar__top > p {
+    padding: 10px;
+    margin: 0;
+    height: 40px;
+    color: white;
+    font-weight: 600;
+    background: #354c4d;
+}
+
+.sidebar__bottom > p {
+    padding: 10px;
+    margin: 0;
+    height: 40px;
+    color: white;
+    font-weight: 600;
+    background: #354c4d;
+}
+
+.sidebar p:hover {
+    background: #283e40;
+    border-bottom: 4px solid wheat;
+}
+
+.sidebar p {
+    transition: all 100ms;
+}
